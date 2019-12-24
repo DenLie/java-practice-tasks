@@ -16,11 +16,11 @@ package lesson04.part01;
 
 public class Task12 {
 
-  public static void main(String[] args) {
-    //напишите тут ваш код
-
-    int a = 42 / 0;
-
-    //напишите тут ваш код
-  }
+    public static void main(String[] args) {
+        try {
+            int a = 42 / 0;
+        } catch (ArithmeticException e) {
+            System.out.println(e.getClass());
+        }
+    }
 }

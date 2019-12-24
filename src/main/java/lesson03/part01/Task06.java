@@ -48,8 +48,20 @@ import java.io.InputStreamReader;
 
 public class Task06 {
 
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+  public static void main(String[] args) throws Exception {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    float sum = 0;
+    float kol = 0;
+    while (true) {
+      int number = Integer.parseInt(reader.readLine());
+      if (number == -1) {
+        break;
+      }
+      sum += number;
+      kol++;
     }
+    float sr = sum / kol;
+    System.out.println(sr);
+  }
 
 }

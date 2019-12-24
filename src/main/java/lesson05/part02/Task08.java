@@ -17,5 +17,9 @@ public class Task08 {
 
     }
 
-    //Напишите тут ваши методы
+    public static void print(int n){}
+    public static void print(char n){}
+    public static void print(long n){}
+    public static void print(boolean n){}
+    public static void print(String n){}
 }

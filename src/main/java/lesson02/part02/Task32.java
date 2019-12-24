@@ -18,10 +18,19 @@ package lesson02.part02;
  * 4.	Программа должна выводить на экран строку N раз.
  * 5.	В программе должен использоваться цикл while.
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task32 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("Введите строку ");
+    String line = reader.readLine();
+    System.out.println("Введите кол-во повторений ");
+    int a = Integer.parseInt(reader.readLine());
+    while(a>0){
+      System.out.println(line);
+      a--;
     }
+
+  }
 }

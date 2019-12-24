@@ -32,10 +32,33 @@ package lesson02.part02;
  * 4.	Если положительных чисел нет, программа должна вывести "0".
  * 5.	Учти, что "0" не относится ни к положительным, ни к отрицательным числам.
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task28 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
 
+  public static void main(String[] args) throws Exception {
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("Введите число 1 ");
+    int a = Integer.parseInt(reader.readLine());
+    System.out.println("Введите число 2 ");
+    int b = Integer.parseInt(reader.readLine());
+    System.out.println("Введите число 3 ");
+    int c = Integer.parseInt(reader.readLine());
+    int p = 0;
+    if (a > 0) {
+      p++;
     }
+    if (b > 0) {
+      p++;
+    }
+    if (c > 0) {
+      p++;
+    }
+    if (p>0){
+        System.out.println(p);
+    }
+    else {
+        System.out.println("0");
+    }
+  }
 }

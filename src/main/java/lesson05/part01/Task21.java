@@ -27,10 +27,13 @@ public class Task21 {
         if (inputArray == null || inputArray.length == 0) {
             return new Pair<Integer, Integer>(null, null);
         }
-
-        // напишите тут ваш код
-
-        return new Pair<Integer, Integer>(0, 0);
+        int x=Integer.MAX_VALUE;
+        int y=Integer.MIN_VALUE;
+        for(int i=0; i<inputArray.length;i++){
+            x=inputArray[i]<x? inputArray[i]:x;
+            y= Math.max(inputArray[i], y);
+        }
+        return new Pair<Integer, Integer>(x,y);
     }
 
     public static class Pair<X, Y> {

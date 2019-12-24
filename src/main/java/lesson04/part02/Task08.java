@@ -19,8 +19,16 @@ import java.util.ArrayList;
 
 public class Task08 {
 
-  public static void main(String[] args) {
-    //напишите тут ваш код
-  }
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("мама");
+        list.add("мыла");
+        list.add("раму");
+        String s = "именно";
+        for (int i = 0; i < 6; i++) {
+            if ((i == 1) | (i == 3) | (i == 5))
+                list.add(i, s);
+            System.out.println(list.get(i));
+        }
+    }
 }
-

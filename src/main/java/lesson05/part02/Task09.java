@@ -22,5 +22,22 @@ public class Task09 {
 
     }
 
-    //Напишите тут ваши методы
+    public static int min(int n, int m) {
+        if(n>m)
+            return m;
+        else
+            return n;
+    }
+    public static long min(long n, long m) {
+        if(n>m)
+            return m;
+        else
+            return n;
+    }
+    public static double min(double n, double m) {
+        if(n>m)
+            return m;
+        else
+            return n;
+    }
 }

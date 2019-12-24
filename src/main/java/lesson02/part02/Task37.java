@@ -23,8 +23,13 @@ package lesson02.part02;
  */
 
 public class Task37 {
-    public static void main(String[] args) {
-        //напишите тут ваш код
 
+  public static void main(String[] args) {
+    for (int i = 0; i <= 10; i++) {
+      for (int j = i; j > 0; j--) {
+        System.out.print("8");
+      }
+      System.out.println();
     }
+  }
 }

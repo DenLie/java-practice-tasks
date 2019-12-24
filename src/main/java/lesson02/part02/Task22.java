@@ -10,10 +10,18 @@ package lesson02.part02;
  * 3.	Если возраст меньше 18 вывести только сообщение "Подрасти еще".
  * 4.	Если возраст больше либо равно 18 ничего не выводить.
  */
-
+import java.util.Scanner;
 public class Task22 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
 
+  public static void main(String[] args) throws Exception {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Введите имя ");
+    String a = sc.next();
+    System.out.println("Введите возраст ");
+    int b = sc.nextInt();
+    if (b<18){
+        System.out.println( a + " подрасти еще");
     }
+
+  }
 }

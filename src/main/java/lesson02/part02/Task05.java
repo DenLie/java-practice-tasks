@@ -13,16 +13,21 @@ package lesson02.part02;
 
 public class Task05 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    Cat cat = new Cat();
+    cat.setCatsCount(5);
+    System.out.println(Cat.catsCount);
+
+  }
+
+  public static class Cat {
+
+    private static int catsCount = 0;
+
+    public static void setCatsCount(int catsCount) {
+      Cat.catsCount = Cat.catsCount + catsCount;
+      //напишите тут ваш код
 
     }
-
-    public static class Cat {
-        private static int catsCount = 0;
-
-        public static void setCatsCount(int catsCount) {
-            //напишите тут ваш код
-
-        }
-    }
+  }
 }

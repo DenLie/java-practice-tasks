@@ -15,12 +15,12 @@ package lesson04.part01;
 
 public class Task13 {
 
-  public static void main(String[] args) {
-    //напишите тут ваш код
-
-    int[] m = new int[2];
-    m[8] = 5;
-
-    //напишите тут ваш код
-  }
+    public static void main(String[] args) {
+        try {
+            int[] m = new int[2];
+            m[8] = 5;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ArrayIndexOutOfBoundsException");
+        }
+    }
 }

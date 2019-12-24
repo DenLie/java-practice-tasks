@@ -1,7 +1,8 @@
 package lesson03.part01;
 
 import java.io.IOException;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 /**
  * Ввести с клавиатуры число. Определить, сколько в введенном числе четных цифр, а сколько нечетных.
  * Если число делится без остатка на 2 (т. е. остаток равен нулю), значит оно четное.
@@ -26,6 +27,16 @@ public class Task18 {
   public static int odd;
 
   public static void main(String[] args) throws IOException {
-    //напишите тут ваш код
+    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    int x = Integer.parseInt(reader.readLine());
+    while (x > 0) {
+      if (x % 2 == 0) {
+        even++;
+      } else {
+        odd++;
+      }
+      x /= 10;
+    }
+    System.out.println("Even: " + even + " Odd: " + odd);
   }
 }

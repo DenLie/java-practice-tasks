@@ -20,6 +20,10 @@ public class Task05 {
     }
 
     public static class Person {
+        String name;
+        int age;
+        char sex;
+        String address;
         //напишите тут ваш код
 
     }

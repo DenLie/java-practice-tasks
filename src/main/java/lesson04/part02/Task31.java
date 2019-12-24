@@ -20,12 +20,11 @@ package lesson04.part02;
 public class Task31 {
 
   public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
-
-    method1();
-
-    //напишите тут ваш код
-
+    try {
+      method1();
+    }catch(Exception e) {
+      System.out.println(e);
+    }
   }
 
   public static void method1() throws Exception1, Exception2, Exception3 {

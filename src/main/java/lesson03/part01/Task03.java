@@ -16,6 +16,9 @@ package lesson03.part01;
 public class Task03 {
 
     public static void main(String[] args) {
+        Cat cat1 = new Cat("Sanday",12,12,12);
+        Cat cat2 = new Cat("Monday",11,11,11);
+        Cat cat3 = new Cat("Tuesday",10,10,10);
         //напишите тут ваш код
     }
 

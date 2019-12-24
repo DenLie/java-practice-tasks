@@ -21,5 +21,8 @@ public class Task17 {
     }
 
 //add interfaces here - добавь интерфейсы тут
+    public interface CanFly{ void Height(int m);}
+    public interface CanRun{ void Speed(int a);}
+    public interface CanSwim{ void Speed(int n);}
 
 }

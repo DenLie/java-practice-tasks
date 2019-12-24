@@ -19,10 +19,14 @@ public class Task30 {
         Woman woman = new Woman();
 
         printName(man);
-        //  printName(woman);
+        printName(woman);
     }
 
-    public static void printName(Man man) {
+    public static void printName(Human h) {
+        if (h.getClass()== Man.class)
+            System.out.println("x");
+        if (h instanceof Woman)
+            System.out.println("y");
 
     }
 
@@ -30,11 +34,11 @@ public class Task30 {
 
     }
 
-    public static class Man {
+    public static class Man extends Human{
 
     }
 
-    public static class Woman {
+    public static class Woman extends Human{
 
     }
 }

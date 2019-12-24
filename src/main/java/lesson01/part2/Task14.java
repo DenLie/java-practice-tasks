@@ -15,6 +15,7 @@ public class Task14 {
      */
 
     public static void print3(String s) {
+        System.out.print(s + " " + s + " " + s);
         //напишите тут ваш код
 
     }

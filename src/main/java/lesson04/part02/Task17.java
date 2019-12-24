@@ -34,8 +34,11 @@ public class Task17 {
 
 
   public static Map<String, Cat> addCatsToMap(String[] cats) {
-    //напишите тут ваш код
-    return null;
+    HashMap<String, Cat> addCats = new HashMap<>();
+    for(String s: cats) {
+      addCats.put(s, new Cat(s));
+    }
+    return addCats;
   }
 
 

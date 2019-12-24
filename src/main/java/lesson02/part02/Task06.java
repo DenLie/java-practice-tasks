@@ -14,17 +14,22 @@ package lesson02.part02;
 
 public class Task06 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    Cat cat = new Cat();
+    cat.setName("Четверг", "Пятница");
+    System.out.println(cat.fullName);
 
+  }
+
+  public static class Cat {
+
+    private String fullName;
+
+    public void setName(String firstName, String lastName) {
+      String fullName = firstName + " " + lastName;
+      this.fullName = fullName;
+
+      //напишите тут ваш код
     }
-
-    public static class Cat {
-        private String fullName;
-
-        public void setName(String firstName, String lastName) {
-            String fullName = firstName + " " + lastName;
-
-            //напишите тут ваш код
-        }
-    }
+  }
 }

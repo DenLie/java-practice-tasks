@@ -10,10 +10,14 @@ package lesson03.part01;
  * 4.	Год должен соответствовать текущему.
  * 5.	Вся дата должна быть выведена в одной строке.
  */
-
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 public class Task17 {
 
   public static void main(String[] args) {
-    //напишите тут ваш код
+    DateFormat dateFormat = new SimpleDateFormat("dd MM yyyy");
+    System.out.println(dateFormat.format(new Date()));
   }
 }

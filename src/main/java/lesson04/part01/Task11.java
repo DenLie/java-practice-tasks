@@ -10,39 +10,40 @@ package lesson04.part01;
  * 3.	Каждый метод должен возвращать свой StackTrace.
  * 4.	Для получения StackTrace воспользуйся Thread.currentThread().getStackTrace().
  */
-
+import java.util.Arrays;
 public class Task11 {
 
-  public static void main(String[] args) {
-    method1();
-  }
+    public static void main(String[] args) {
+        method1();
+      System.out.println(Arrays.toString(method1()));
+    }
 
-  public static StackTraceElement[] method1() {
-    method2();
-    //напишите тут ваш код
-    return null;
-  }
+    public static StackTraceElement[] method1() {
+        method2();
+        StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
+        return stackTraceElement;
+    }
 
-  public static StackTraceElement[] method2() {
-    method3();
-    //напишите тут ваш код
-    return null;
-  }
+    public static StackTraceElement[] method2() {
+        method3();
+        StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
+        return stackTraceElement;
+    }
 
-  public static StackTraceElement[] method3() {
-    method4();
-    //напишите тут ваш код
-    return null;
-  }
+    public static StackTraceElement[] method3() {
+        method4();
+        StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
+        return stackTraceElement;
+    }
 
-  public static StackTraceElement[] method4() {
-    method5();
-    //напишите тут ваш код
-    return null;
-  }
+    public static StackTraceElement[] method4() {
+        method5();
+        StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
+        return stackTraceElement;
+    }
 
-  public static StackTraceElement[] method5() {
-    //напишите тут ваш код
-    return null;
-  }
+    public static StackTraceElement[] method5() {
+        StackTraceElement[] stackTraceElement = Thread.currentThread().getStackTrace();
+        return stackTraceElement;
+    }
 }

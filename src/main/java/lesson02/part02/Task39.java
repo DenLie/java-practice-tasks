@@ -22,10 +22,16 @@ package lesson02.part02;
  * 3.	Программа должна выводить 10 раз текст указанный в задании.
  * 4.	В программе должен использоваться цикл for.
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task39 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        public static void main(String[] args) throws Exception {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите имя ");
+        String name = reader.readLine();
+        for (int i=0; i<10; i++){
+            System.out.println(name + " любит меня");
+        }
 
     }
 }

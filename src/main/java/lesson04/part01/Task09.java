@@ -3,7 +3,7 @@ package lesson04.part01;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
+import java.util.Date;
 /**
  * Измерить, сколько времени занимает 10 тысяч вставок для каждого списка.
  * Метод getInsertTimeInMs должен вернуть время своего исполнения в миллисекундах.
@@ -18,23 +18,25 @@ import java.util.List;
 
 public class Task09 {
 
-  public static void main(String[] args) {
-    System.out.println(getInsertTimeInMs(new ArrayList()));
-    System.out.println(getInsertTimeInMs(new LinkedList()));
-  }
-
-  public static long getInsertTimeInMs(List list) {
-    // напишите тут ваш код
-
-    insert10000(list);
-
-    // напишите тут ваш код
-    return 0;
-  }
-
-  public static void insert10000(List list) {
-    for (int i = 0; i < 10000; i++) {
-      list.add(0, new Object());
+    public static void main(String[] args) {
+        System.out.println(getInsertTimeInMs(new ArrayList()));
+        System.out.println(getInsertTimeInMs(new LinkedList()));
     }
-  }
+
+    public static long getInsertTimeInMs(List list) {
+      Date currentTime = new Date();
+      long secondsA =  currentTime.getTime();
+
+      insert10000(list);
+      Date newDate = new Date();
+      long secondsB = newDate.getTime();
+      secondsA = secondsB - secondsA;
+      return secondsA;
+    }
+
+    public static void insert10000(List list) {
+        for (int i = 0; i < 10000; i++) {
+            list.add(0, new Object());
+        }
+    }
 }

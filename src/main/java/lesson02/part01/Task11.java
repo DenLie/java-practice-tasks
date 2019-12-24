@@ -15,8 +15,15 @@ package lesson02.part01;
 
 public class Task11 {
     //напишите тут ваш код
+    public static int convertToSeconds(int hour){
+        int sec= hour *60*60;
+        return sec;
+    }
+
 
     public static void main(String[] args) {
+        System.out.println(convertToSeconds(2));
+        System.out.println(convertToSeconds(4));
         //напишите тут ваш код
 
     }

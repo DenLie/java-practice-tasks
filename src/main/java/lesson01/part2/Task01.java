@@ -21,9 +21,14 @@ public class Task01 {
 
     public static void main(String[] args) {
         //напишите тут ваш код
+        Person person = new Person();
     }
 
     public static class Person {
         //напишите тут ваш код
+        String name= "Den";
+        int age= 19;
+        int weight=60;
+        int money= 100;
     }
 }

@@ -23,12 +23,29 @@ package lesson03.part01;
 
 public class Task08 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
+  }
+
+  public static class Friend {
+
+    String name;
+    int age;
+    char sex;
+
+    public void initialize(String name) {
+      this.name = name;
     }
 
-    public static class Friend {
-        //напишите тут ваш код
+    public void initialize(String name, int age) {
+      this.name = name;
+      this.age = age;
     }
 
+    public void initialize(String name, int age, char sex) {
+      this.name = name;
+      this.age = age;
+      this.sex = sex;
+    }
+  }
 }

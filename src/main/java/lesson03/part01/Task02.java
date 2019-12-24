@@ -16,13 +16,30 @@ package lesson03.part01;
 
 public class Task02 {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
+  }
+
+  public static class Dog {
+
+    String name;
+    int age;
+
+    public String getName() {
+      return name;
     }
 
-    public static class Dog {
-        //напишите тут ваш код
-
+    public void setName(String name) {
+      this.name = name;
     }
 
+    public int getAge() {
+      return age;
+    }
+
+    public void setAge(int age) {
+      this.age = age;
+
+    }
+  }
 }

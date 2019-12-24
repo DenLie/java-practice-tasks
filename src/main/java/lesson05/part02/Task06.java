@@ -18,5 +18,6 @@ public class Task06 {
 
     }
 
-    //Напишите тут ваши методы
+    public static void print(int m){}
+    public static void print(String n){}
 }

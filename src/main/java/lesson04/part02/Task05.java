@@ -18,7 +18,16 @@ import java.util.ArrayList;
 
 public class Task05 {
 
-  public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
-  }
+    public static void main(String[] args) throws Exception {
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        ArrayList<String> list = new ArrayList<String>();
+        for (int i = 0; i < 10; i++) {
+            String s = r.readLine();
+            list.add(0, s);
+        }
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+
+        }
+    }
 }

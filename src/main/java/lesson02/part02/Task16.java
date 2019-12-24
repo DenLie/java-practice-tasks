@@ -24,10 +24,30 @@ package lesson02.part02;
  * 4.	Если горит жёлтый цвет, необходимо вывести текст: "жёлтый"
  * 5.	Если горит красный цвет, необходимо вывести текст: "красный"
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Locale;
+import java.util.Scanner;
 public class Task16 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
 
+  public static void main(String[] args) throws Exception {
+
+/*    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    System.out.println("Введите время ");
+    String sA = reader.readLine();
+    double t = Double.parseDouble(sA);
+    Double a= t%5;*/
+
+    Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+    System.out.println("Введите время ");
+    double t = sc.nextDouble();
+    double a=t % 5;
+    if (a >= 0 && a < 3) {
+      System.out.println("Green");
+    } else if (a >=3 && a<4) {
+      System.out.println("Yellow");
+    } else {
+      System.out.println("Red");
     }
+  }
 }

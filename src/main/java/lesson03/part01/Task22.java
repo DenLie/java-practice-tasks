@@ -17,7 +17,8 @@ package lesson03.part01;
  * 3.	Метод readDouble должен считывать и возвращать дробное число(тип double).
  * 4.	Метод readBoolean должен считывать и возвращать логическую переменную(тип boolean).
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task22 {
 
   public static void main(String[] args) throws Exception {
@@ -27,23 +28,27 @@ public class Task22 {
   public static class ConsoleReader {
 
     public static String readString() throws Exception {
-      //напишите тут ваш код
-      return null;
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      String a = reader.readLine();
+      return a;
     }
 
     public static int readInt() throws Exception {
-      //напишите тут ваш код
-      return 0;
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      int b =Integer.parseInt(reader.readLine());
+      return b;
     }
 
     public static double readDouble() throws Exception {
-      //напишите тут ваш код
-      return 0.0;
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      double c = Double.parseDouble(reader.readLine());
+      return c;
     }
 
     public static boolean readBoolean() throws Exception {
-      //напишите тут ваш код
-      return false;
+      BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+      boolean d =  Boolean.parseBoolean(reader.readLine());
+      return d;
     }
   }
 

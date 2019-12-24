@@ -16,8 +16,14 @@ import java.io.InputStreamReader;
  */
 
 public class Task02 {
-
-  public static void main(String[] args) throws Exception {
-    //напишите тут ваш код
-  }
+    public static void main(String[] args) throws Exception {
+        BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
+        String[] arr = new String[10];
+        for (int i = 0; i < 10; i++) {
+            arr[i] = r.readLine();
+        }
+        for (int i = arr.length - 1; i >= 0; i--) {
+            System.out.println(arr[i]);
+        }
+    }
 }

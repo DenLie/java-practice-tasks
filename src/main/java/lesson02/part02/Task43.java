@@ -18,10 +18,21 @@ package lesson02.part02;
  * 3.	Программа должна выводить текст, шаблон которого указан в задании.
  * 4.	Каждое предложение вывести с новой строки.
  */
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Task43 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Введите имя ");
+        String name = reader.readLine();
+        System.out.println("Введите день");
+        int d = Integer.parseInt(reader.readLine());
+        System.out.println("Введите месяц");
+        int m = Integer.parseInt(reader.readLine());
+        System.out.println("Введите год");
+        int y = Integer.parseInt(reader.readLine());
+        System.out.println("Меня зовут "+ name);
+        System.out.println("Я родился " + d + "." + m + "." + y);
 
     }
 }

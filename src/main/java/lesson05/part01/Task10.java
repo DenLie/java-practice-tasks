@@ -19,25 +19,29 @@ public class Task10 {
     }
 
     public class Cat {
+        private String name;
+        private int age;
+        private int weight;
+        private int speed;
 
         public Cat(String name, int age, int weight) {
 
         }
 
         public String getName() {
-            return null;
+            return name;
         }
 
         public int getAge() {
-            return 0;
+            return age;
         }
 
-        public void setWeight(int weight) {
-
+        private void setWeight(int weight) {
+            this.weight=weight;
         }
 
-        public void setSpeed(int speed) {
-
+        private void setSpeed(int speed) {
+            this.speed=speed;
         }
     }
 }

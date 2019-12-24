@@ -27,8 +27,22 @@ import java.io.*;
 import java.util.*;
 
 public class Task26 {
-    public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
 
+  public static void main(String[] args) throws Exception {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Введите число ");
+    int a = sc.nextInt();
+    int mod = a % 2;
+    if (a > 0 & mod == 0) {
+      System.out.println("Положительное четное число");
+    } else if (a > 0 & mod != 0) {
+      System.out.println("Положительное нечетное число");
+    } else if (a < 0 & mod == 0) {
+      System.out.println("Отрицательное четное число");
+    } else if (a < 0 & mod != 0) {
+      System.out.println("Отрицательное нечетное число");
+    } else if (a==0){
+        System.out.println("Ноль");
     }
+  }
 }

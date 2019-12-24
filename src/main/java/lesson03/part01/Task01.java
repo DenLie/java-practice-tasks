@@ -20,6 +20,9 @@ public class Task01 {
     }
 
     public static class Cat{
-        //напишите тут ваш код
+        String name;
+        int age;
+        int weight;
+        int strength;
     }
 }
